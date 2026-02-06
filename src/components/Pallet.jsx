@@ -9,12 +9,12 @@ export default function Pallet(){
   
     //function ifyes ()
     const yesstyle = {
-        height: 100+count*5,
-        width: 100+count*5
+        height: 100+count*10,
+        width: 100+count*10
       };
       const nostyle = {
-        height: 100-count*5,
-        width: 100-count*5
+        height: 100-count*10,
+        width: 100-count*10
       };
 
     return(
@@ -24,20 +24,20 @@ export default function Pallet(){
                     {
                         switch(count) {
   
-                            case 1:   return <h1>pratishtha, oh sorry prashasti, i know you are mad with me, but can you please forgive this nasamajh insaan?????(Pakka dobara nai hoga)</h1>;
-                            case 2:   return <h1>Tum sachme merese baat nai karogi???(try again)</h1>;
-                            case 3:   return <h1>Kabtak no dabaogi?</h1>;
-                            case 4:   return <h1>Dabati raho,i have plenty of time</h1>;
-                            case 5:   return <h1>Yaar?</h1>;
-                            case 16:    return <h1>No button hi hata dia! LOL!,  Abb to sorry deni padhegi hihihihihi</h1>
+                            case 1:   return <h2>Rishikaaaaa, This app is meant to ask you for valentines day, but yeah pre releasing it.(press No) </h2>;
+                            case 2:   return <h2>I know tumhara mood kharab hai, But kya is janam me tumhaara mood thik ho paaega??</h2>;
+                            case 3:   return <h2>Ek Baar smile to krdo Cutuuu?</h2>;
+                            case 4:   return <h2>Please krdo Pineapple</h2>;
+                            case 5:   return <h2>See thodi smile aa hi gyi hai</h2>;
+                            case 10:    return <h2>No button hi hata dia! HIHI!</h2>
                     
-                            default:      return <h1>Pretty Pleas{e}?</h1>
+                            default:      return <h2>Pleas{e}?</h2>
                           }
                     })()
-                }</div>:<h1>Thank You Buggeeeeeeee!! mujhe pata tha tum mujhe maaf kie bagair nai reh sakti :)</h1>}
+                }</div>:<h2>Mere hote hue tumhara mood off kese reh sakta hai, LOL :)</h2>}
             {yes?<div>
                 <button className="btn" style={yesstyle} onClick={()=>{setYes(false)}}></button>
-                {count<16?<button className="nobutton" style={nostyle} onClick={()=>{setCount(count+1); if(count>5)setE(e+"e")}}></button>:null}
+                {count<10?<button className="nobutton" style={nostyle} onClick={()=>{setCount(count+1); if(count>5)setE(e+"e")}}></button>:null}
             </div>:null}
             
         </div>
